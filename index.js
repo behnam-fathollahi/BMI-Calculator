@@ -13,13 +13,16 @@ function calculateBMI(){
 
   if (bmiValue < 18.5){
        weightConditionEl.innerText = "Under weight"
+       weightConditionEl.style.color = "burlywood"
   }else if (bmiValue >= 18.5 && bmiValue <= 24.9){
- 
     weightConditionEl.innerText = "Normal weight"
+    weightConditionEl.style.color = "yellow"
   } else if (bmiValue >= 25 && bmiValue <= 29.9){
     weightConditionEl.innerText = "Over weight"
+    weightConditionEl.style.color = "blue"
   }else if (bmiValue >= 30) {
     weightConditionEl.innerText = "Obesity"
+    weightConditionEl.style.color = "red"
   }
 
 
